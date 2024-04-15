@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SuperVolleyball.MainWindow"
+        Icon="Images/ball.png"
+        Title="Вход">
+    <StackPanel>
+        <TextBlock FontSize="30" HorizontalAlignment="Center">СуперВолейбол</TextBlock>
+        <Image Source="Images/ball.png" Height="200" Width="200"></Image>
+        <TextBox x:Name="LoginTextBox" Watermark="Логин"></TextBox>
+        <TextBox Name="PassTextBox" Watermark="Пароль"></TextBox>
+        <Button Click="LoginButton_OnClick" Name="LoginButton">Войти</Button>
+    </StackPanel>
+</Window>

@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SuperVolleyball.AdminWin"
+        Icon="Images/ball.png"
+        Title="Администратор">
+    <StackPanel>
+        <DataGrid Name="PlayersGrid" x:CompileBindings="False" Height="400" Margin="0 0 0 20">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия игрока" Binding="{Binding surname}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Позиция" Binding="{Binding position}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Вес" Binding="{Binding weight}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Рост" Binding="{Binding height}"></DataGridTextColumn>
+                <DataGridTextColumn Header="День рождения" Binding="{Binding birthday}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата начала игры" Binding="{Binding startday}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Команда" Binding="{Binding team}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Click="DeleteButton_OnClick" Name="DeleteButton">Удалить выбранного игрока</Button>
+        <Button Click="EditButton_OnClick" Name="EditButton">Изменить данные выбранного игрока</Button>
+    </StackPanel>
+</Window>

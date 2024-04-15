@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SuperVolleyball.EditWindow"
+        Icon="Images/Ball.png"
+        Title="Редактирование">
+    <StackPanel>
+        <TextBlock>Выбранный ID игрока:</TextBlock>
+        <TextBlock Name="PlayerIdTextBlock"></TextBlock>
+        
+        <TextBlock>Фамилия</TextBlock>
+        <TextBox Watermark="Фамилия игрока" Name="SurnameTextBox"></TextBox>
+        
+        <TextBlock>Позиция</TextBlock>
+        <ComboBox Name="PositionComboBox"></ComboBox>
+        
+        <TextBlock>Вес</TextBlock>
+        <TextBox Watermark="Вес" Name="WeightTextBox"></TextBox>
+        
+        <TextBlock>Рост</TextBlock>
+        <TextBox Watermark="Рост" Name="HeightTextBox"></TextBox>
+        
+        <TextBlock>День рождения</TextBlock>
+        <DatePicker Name="BirthdayPicker"></DatePicker>
+        
+        <TextBlock>Дата начала игры</TextBlock>
+        <DatePicker Name="StartdayPicker"></DatePicker>
+        
+        <TextBlock>Команда</TextBlock>
+        <ComboBox Name="TeamComboBox"></ComboBox>
+        
+        <Button Name="SavebButton" Click="SavebButton_OnClick">Сохранить</Button>
+    </StackPanel>
+</Window>
